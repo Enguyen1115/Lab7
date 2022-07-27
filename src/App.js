@@ -2,7 +2,7 @@ import React from "react";
 import { Nav, Navbar, Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import CreateStudent from "./Components/create-student.component";
 import EditStudent from "./Components/edit-student.component";
 import StudentList from "./Components/student-list.component";
