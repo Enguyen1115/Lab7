@@ -49,3 +49,16 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+.button {
+  padding: 14px 0px;
+  text-align: center;
+}
+
+.nameBlock {
+  padding: 10px 0px;
+}
+
+.form-control {
+  margin: 10px 0px
+}
