@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import StudentForm from "./StudentForm";
+import {useParams} from "react-router-dom";
 
 const EditStudent = (props) => {
+    const {id} = useParams();
     const [formValues, setFormValues] = useState({
         name: "",
         email: "",
@@ -13,7 +15,7 @@ const EditStudent = (props) => {
         axios
             .put(
                 "http://localhost:4000/students/update-student/" +
-                props.match.params.id,
+                id,
                 studentObject
             )
             .then((res) => {
@@ -29,7 +31,7 @@ const EditStudent = (props) => {
         axios
             .get(
                 "http://localhost:4000/students/update-student/"
-                + props.match.params.id
+                + id
             )
             .then((res) => {
                 const { name, email, rollno } = res.data;
